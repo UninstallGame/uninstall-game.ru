@@ -1,4 +1,7 @@
 #!/bin/sh
-echo "start update"
+source ./colors.sh
+
+preview
+printGreen "start update"
 scp -r ./* srv:/var/www/uninstall-game.ru
-echo "update success"
+printGreen "update success"
