@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>image to b64</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../../../base/color.css">
+</head>
+<body>
+<span class="light-yellow">
+    Convert any image type to base64
+</span>
+<div class="container">
+    <div id="input" class="light-yellow">
+        Choose from file system
+        <br>------------or------------<br>
+        Drop on page
+        <br>------------or------------<br>
+        Paste from clipboard
+    </div>
+    <div id="result">
+        <div class="result_item">
+            <img class="item_img"
+                 src="https://s3-symbol-logo.tradingview.com/ing--600.png">
+            <div class="item_text overflow-ellipsis light-yellow">
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vexels
+                .com%2Fgraphics%2Fing%2F&psig=AOvVaw1ozlDICK2FVZtKKBzuzbaJ&ust=1643670470023000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOC32-jL2vUCFQAAAAAdAAAAABAD
+                <div class="item_images">
+                    <img width="20" src="assets/chevron-up-solid.svg" alt="">
+                    <div class="tooltip">
+                        <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                        <img width="20" src="assets/copy-solid.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
