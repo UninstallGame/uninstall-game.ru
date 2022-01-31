@@ -6,34 +6,37 @@
     <script src="main.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../../../../base/color.css">
+    <link rel="stylesheet" href="../../../../base/tooltip.css">
+    <link rel="stylesheet" href="../../../../base/default.css">
 </head>
 <body>
-<span class="light-yellow">
-    Convert any image type to base64
-</span>
-<div class="container">
-    <div id="input" class="light-yellow">
-        Choose from file system
-        <br>------------or------------<br>
-        Drop on page
-        <br>------------or------------<br>
-        Paste from clipboard
-    </div>
-    <div id="result">
-        <div class="result_item">
-            <img class="item_img"
-                 src="https://s3-symbol-logo.tradingview.com/ing--600.png">
-            <div class="item_text overflow-ellipsis light-yellow">
-                https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vexels
-                .com%2Fgraphics%2Fing%2F&psig=AOvVaw1ozlDICK2FVZtKKBzuzbaJ&ust=1643670470023000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOC32-jL2vUCFQAAAAAdAAAAABAD
-                <div class="item_images">
-                    <img width="20" src="assets/chevron-up-solid.svg" alt="">
-                    <div class="tooltip">
-                        <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
-                        <img width="20" src="assets/copy-solid.svg" alt="">
-                    </div>
-                </div>
-            </div>
+<div class="base">
+    <h1 class="light-yellow">
+        # Online convert .jpg, .jpeg, .png, .svg, .webp to base64
+    </h1>
+    <div class="container">
+        <div id="input" class="white">
+            <span>Choose from file system</span>
+            <span>------------or------------</span>
+            <span class="red">Drop on page (soon)</span>
+            <span>------------or------------</span>
+            <span class="red">Paste from clipboard (soon)</span>
+        </div>
+        <div id="result">
+
+            <!--            <div class="result_item">-->
+            <!--                <img class="item_img" src="https://s3-symbol-logo.tradingview.com/ing&#45;&#45;600.png">-->
+            <!--                <div class="item_group">-->
+            <!--                    <div class="group_text overflow-ellipsis green">Text</div>-->
+            <!--                    <div class="group_images">-->
+            <!--                        <img class="images_expand cursor-pointer" width="20" src="assets/chevron-up-solid.svg" alt="">-->
+            <!--                        <div class="images_copy" hint="Copy to clipboard">-->
+            <!--                            <img class="images_copy_img" width="20" src="assets/copy-solid.svg" alt="">-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--            </div>-->
+
         </div>
     </div>
 </div>

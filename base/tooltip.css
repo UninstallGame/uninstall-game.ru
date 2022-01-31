@@ -1,0 +1,38 @@
+[hint] {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+[hint]:after {
+    content: attr(hint);
+    bottom: 150%;
+    margin-left: -75px;
+    width: 150px;
+    text-align: center;
+    color: #bbbbbb;
+    padding: 5px;
+}
+
+[hint]:before {
+    content: "";
+    bottom: 150%;
+    margin-left: -5px;
+    margin-bottom: -5px;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+}
+
+[hint]:after, [hint]:before {
+    transition: opacity 0.3s;
+    background-color: #555;
+    position: absolute;
+    visibility: hidden;
+    z-index: 1;
+    left: 50%;
+}
+
+[hint]:hover:after, [hint]:hover:before {
+    visibility: visible;
+}

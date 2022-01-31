@@ -1,3 +1,7 @@
+.white {
+    color: #bbbbbb;
+}
+
 .dark {
     color: #2b2b2b;
 }
@@ -24,4 +28,8 @@
 
 .green {
     color: #6A8759;
+}
+
+.red {
+    color: #973a38;
 }
