@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="free online converter from .jpg, .jpeg, .png, .svg to base64 without size limit">
+    <meta name="keywords" content="JavaScript JS image converter">
+    <meta name="author" content="Alexandr Berlya">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>image to b64</title>
     <script src="main.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -10,11 +14,25 @@
     <link rel="stylesheet" href="../../../../base/default.css">
 </head>
 <body>
-<div class="base">
-    <h1 class="light-yellow">
-        # Online convert .jpg, .jpeg, .png, .svg, .webp to base64
-    </h1>
-    <div class="container">
+<header>
+    <nav>
+        <ul class="primary">
+            <li class="cursor-pointer">
+                <a href="/">Home</a>
+            </li>
+            <li class="cursor-pointer selected">
+                <span class="like-a">Convert to base64</span>
+            </li>
+        </ul>
+    </nav>
+</header>
+<section class="base">
+    <header>
+        <h1 class="light-yellow">
+            # Online convert .jpg, .jpeg, .png, .svg, .webp to base64
+        </h1>
+    </header>
+    <article class="container">
         <div id="input" class="white">
             <span>Choose from file system</span>
             <span>------------or------------</span>
@@ -38,7 +56,15 @@
             <!--            </div>-->
 
         </div>
-    </div>
-</div>
+    </article>
+</section>
+<footer>
+    <nav>
+        <ul>
+            <li class="el_title">Image</li>
+            <li class="cursor-pointer"><a href="utils/converter/image/base64">Convert to base64</a></li>
+        </ul>
+    </nav>
+</footer>
 </body>
 </html>

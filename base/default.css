@@ -1,11 +1,16 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: Roboto;
-    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
     width: 100%;
     height: 100%;
     background-color: #2b2b2c;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    flex: 1 1 auto;
 }
 
 .base {
@@ -22,4 +27,65 @@ html, body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+
+nav {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.primary {
+    display: flex;
+}
+
+.sub {
+    transition: visibility 0.1s;
+    visibility: hidden;
+    position: absolute;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+li {
+    padding: 10px;
+    list-style: none;
+    transition: background-color 0.1s;
+}
+
+.selected, li:hover {
+    background-color: #6A8759;
+}
+
+li:hover .sub {
+    margin-top: 10px;
+    visibility: visible;
+    width: fit-content;
+}
+
+.like-a, a {
+    text-decoration: none;
+    color: #bbbbbb;
+}
+
+
+footer {
+    margin-top: 50px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_el:not(.footer_el:last-child) {
+    margin-right: 20px;
+}
+
+.el_title {
+    color: #bbbbbb;
+    font-size: 16px;
+}
+
+.el_title:hover {
+    background-color: unset;
 }
